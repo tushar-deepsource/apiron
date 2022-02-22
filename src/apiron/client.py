@@ -80,7 +80,7 @@ def _get_required_headers(service: apiron.Service, endpoint: apiron.Endpoint) ->
     :rtype:
         dict
     """
-    headers = {}
+    headers = None
     headers.update(service.required_headers)
     headers.update(endpoint.required_headers)
     return headers
